@@ -1,0 +1,12 @@
+{
+  "globals": {
+    "site": {
+      "url": "http://www.smileidentity.com",
+      "title": "Smile Identity",
+      "description": "Smile Identity landing page",
+      "language": "en",
+      "author": "Noah Appel"
+    },
+    "google_analytics": ""
+  }
+}

@@ -1,0 +1,33 @@
+doctype xml
+
+- var paths = [];
+- var files = []; 
+- function recursiveTree(obj) { 
+-   if (typeof obj == "object" && !obj.length) { 
+-     for (item in obj) { 
+-       if (item === "contents") { 
+-         recursiveTree(obj[item]); 
+-       } else if (item != "data") { 
+-         paths.push(item); 
+-         recursiveTree(obj[item]); 
+-         paths.splice(paths.length-1, 1); 
+-       } 
+-     } 
+-   } else if (typeof obj == "object") { 
+-     for (i in obj) { 
+-       var file = obj[i]; if (/(\.html$)/.test(file)) { 
+-         paths.push(file); 
+-         files.push("/" + paths.join("/")); 
+-         paths.splice(paths.length-1, 1);
+-       } 
+-     } 
+-   } 
+- }; recursiveTree(public);
+
+urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+  - for(i in files) {
+    url
+      loc= site.url + files[i]
+      changefreq monthly
+      priority 0.8
+  - }

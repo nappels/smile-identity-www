@@ -1,0 +1,19 @@
+// Remove the "navbar-fixed-top" class if you don't want it fixed at the top of
+// the document.
+
+.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/')= site.title
+    #navbar-collapse.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li(class="#{ current.path[0] == 'blog' ? 'active' : '' }")
+          a(href='#') Careers
+        li(class="#{ current.path[0] == 'doc' ? 'active' : '' }")
+          a(href='#') Contact
+    // /.navbar-collapse 

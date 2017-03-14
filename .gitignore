@@ -1,0 +1,22 @@
+# Folders to ignore
+bower_components
+node_modules
+public/assets/fonts
+public/assets/scripts/vendor
+public/assets/styles/_bootstrap-variables-copy.less
+public/assets/styles/vendor
+www
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+.DS_Store

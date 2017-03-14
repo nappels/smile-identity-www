@@ -1,0 +1,28 @@
+{
+  "name": "smile_identity_www",
+  "version": "0.1.0",
+  "authors": [
+    "Noah Appel <noah.appel@gmail.com>"
+  ],
+  "description": "Landing page for Smile Identity",
+  "main": "index.ejs",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "http://www.smileidentity.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "~3.7",
+    "respond": "~1.4",
+    "jquery": "~2.1",
+    "bootstrap": "~3.3",
+    "font-awesome": "~4.3"
+  }
+}
