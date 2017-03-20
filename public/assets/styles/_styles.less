@@ -1,0 +1,171 @@
+//
+// Styles
+// --------------------------------------------------------
+
+// Header
+
+body.scrolled .navbar-inverse {
+  background: #4B4B4B;
+}
+
+.navbar-inverse {
+  background: transparent;
+  border: none;
+  padding: 16px 0;
+  transition: background .3s ease;
+
+  .navbar-header {
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  ul.nav {
+    float: right;
+
+    a {
+      font-weight: 300;
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+}
+
+// Hero section
+.jumbotron {
+  // height: ~"calc(100vh - @{body-padding-top})";
+  height: 100vh;
+  margin-bottom: 0;
+  text-align: center;
+  .diagonal-gradient(rgb(0,1,6), rgb(150,150,150));
+  color: #fff;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 96%;
+    margin: auto;
+    transform: translate(0, -50%);
+    font-size: 44px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 60px;
+    }
+  }
+}
+
+
+// Sections
+
+.section {
+  padding: 40px 0;
+  text-align: left;
+
+  @media (min-width: @screen-sm-min) {
+    padding: 120px 0;
+  }
+
+  &.dark {
+    background: #000;
+    color: #fff;
+  }
+
+  &.light {
+    background: #fff;
+    color: #4B4B4B;
+  }
+}
+
+// mission section
+
+#mission {
+  p {
+    font-size: 24px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 34px;
+    }
+  }
+}
+
+// how section
+
+#how {
+  .diagonal-gradient(#000, #1F1E28);
+  text-align: center;
+
+  .col-md-4 {
+    margin: 40px 0 60px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+
+    .icon-wrapper {
+      height: 125px;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .icon {
+    margin: 0 auto;
+  }
+}
+
+// contact section
+
+#contact {
+  .gradient(#fff, #efefef);
+  color: #6F6F6F;
+
+  h2 {
+    color: #000;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+
+    .btn,
+    input {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    input {
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+}
+
+// join section
+
+#join {
+  color: #6F6F6F;
+
+  h2 {
+    color: #000;
+  }
+
+  a {
+    margin-top: 30px;
+  }
+}
+
+// Footer
+
+#footer {
+
+}

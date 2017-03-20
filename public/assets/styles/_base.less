@@ -2,16 +2,68 @@
 // Base
 // --------------------------------------------------------
 
-// Add top padding for fixed nav
+
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  &:-moz-placeholder {
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 300;
+  }
+  &:-ms-input-placeholder {
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 300;
+  }
+  &::-webkit-input-placeholder {
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 300;
+  }
 }
 
 pre {
   background-color: #f8f8f8
 }
 
-ul.nav{
-  float: right;
+.bold {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
+h2 {
+  @media (min-width: @screen-sm-min) {
+    font-size: 34px;
+  }
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.blue {
+  color: @blue;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: @blue;
+  border-color: @blue;
 }
