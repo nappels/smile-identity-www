@@ -80,3 +80,11 @@ initBranch:
 	git commit -m "First commit"
 	git push --set-upstream origin $(WEB_BRANCH)
 	git checkout master
+
+deploy:
+	@echo -e "${YELLOW}Cleaning www directory${NC}"
+	rm -rf www
+	@echo -e "${YELLOW}Compiling static files${NC}"
+	harp compile
+	@echo -e "${YELLOW}Deploying to gh-pages${NC}"
+	gulp deploy

@@ -21,7 +21,7 @@ var timestamp = function() {
 
 // Variables
 // ----------------------------------------------------------------------------
-var repositoryUrl = 'git@github.com:USER/REMOTEREPO.git';
+var repositoryUrl = 'git@github.com:nappels/smile-identity-www.git';
 var remoteAlias   = 'origin';
 var sourceBranch  = 'master';
 var webBranch     = 'gh-pages';
@@ -56,7 +56,7 @@ gulp.task('deploy', function() {
       "remoteUrl": repositoryUrl,
       "origin": remoteAlias,
       "branch": webBranch,
-      "message": commitMessage,
+      "message": "Deploy " + timestamp(),
       "push": true
   }));
 });
