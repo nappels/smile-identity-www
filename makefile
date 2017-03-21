@@ -47,8 +47,6 @@ install:
 	cp $(BOWER)/respond/dest/respond.src.js         $(JS_VENDOR)/respond.js
 	cp $(BOWER)/respond/dest/respond.min.js         $(JS_VENDOR)
 	cp $(BOWER)/bootstrap/less/variables.less       $(ASSETS)/styles/_bootstrap-variables-copy.less
-	cp $(BOWER)/bootstrap/fonts/*                   $(ASSETS)/fonts
-	cp $(BOWER)/font-awesome/fonts/*                $(ASSETS)/fonts
 
 clean:
 	@echo -e "${YELLOW}Removing installed dependencies${NC}"
