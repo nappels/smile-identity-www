@@ -37,6 +37,9 @@ install:
 	@echo -e "${YELLOW}Installing front-end dependencies${NC}"
 	bower install
 
+	@echo -e "${YELLOW}Creating vendor directory${NC}"
+	mkdir public/assets/scripts/vendor/
+
 	@echo -e "${YELLOW}Copy required assets from bower components${NC}"
 	cp $(BOWER)/bootstrap/dist/js/bootstrap.js      $(JS_VENDOR)
 	cp $(BOWER)/bootstrap/dist/js/bootstrap.min.js  $(JS_VENDOR)
