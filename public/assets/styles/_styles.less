@@ -5,7 +5,7 @@
 // Header
 
 body.scrolled .navbar-inverse {
-  background: #4B4B4B;
+  background: @black;
 }
 
 .navbar-inverse {
@@ -40,7 +40,7 @@ body.scrolled .navbar-inverse {
   height: 100vh;
   margin-bottom: 0;
   text-align: center;
-  .diagonal-gradient(rgb(0,1,6), rgb(150,150,150));
+  .diagonal-gradient(@black, rgb(150,150,150));
   color: #fff;
   position: relative;
 
@@ -55,6 +55,17 @@ body.scrolled .navbar-inverse {
 
     @media (min-width: @screen-sm-min) {
       font-size: 60px;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    .icon {
+      margin: 0 auto;
     }
   }
 }
@@ -96,7 +107,7 @@ body.scrolled .navbar-inverse {
 // how section
 
 #how {
-  .diagonal-gradient(#000, #1F1E28);
+  background: @blue;
   text-align: center;
 
   .col-md-4 {
@@ -148,12 +159,28 @@ body.scrolled .navbar-inverse {
       margin-right: 10px;
     }
   }
+
+  @media (min-width: @screen-md-min) {
+    .trust {
+      background-image: url(../images/trust.png);
+      background-repeat: no-repeat;
+      background-size: 264px 289px;
+      height: 289px;
+      width: 264px;
+      margin: 0 auto;
+
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        background-image: url(../images/trust@2x.png);
+      }
+    }
+  }
 }
 
 // join section
 
 #join {
   color: #6F6F6F;
+  text-align: center;
 
   h2 {
     color: #000;
@@ -167,5 +194,13 @@ body.scrolled .navbar-inverse {
 // Footer
 
 #footer {
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
 
+    &.copy {
+      opacity: .8;
+    }
+  }
 }

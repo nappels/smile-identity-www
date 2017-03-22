@@ -1,66 +1,66 @@
-/* glue: 0.11.1 hash: a55e7bc5f7 */
-        .icon_dedupe,
-.icon_collection,
-.icon_auth,
-.icon_lock,
-.icon_arrow {
+/* glue: 0.11.1 hash: 2c48175c8a */
+        .icon-dedupe,
+.icon-auth,
+.icon-collection,
+.icon-lock,
+.icon-arrow {
             background-image: url('sprite_assets.png');
             background-repeat: no-repeat;
         }
         
-        .icon_dedupe {
+        .icon-dedupe {
             background-position: -1px -1px;
             width: 113px;
             height: 96px;
         }
         
-        .icon_collection {
+        .icon-auth {
             background-position: -116px -1px;
+            width: 53px;
+            height: 83px;
+        }
+        
+        .icon-collection {
+            background-position: -1px -99px;
             width: 75px;
             height: 60px;
         }
         
-        .icon_auth {
-            background-position: -1px -99px;
-            width: 40px;
-            height: 66px;
-        }
-        
-        .icon_lock {
-            background-position: -43px -99px;
+        .icon-lock {
+            background-position: -78px -99px;
             width: 34px;
             height: 46px;
         }
         
-        .icon_arrow {
-            background-position: -116px -63px;
+        .icon-arrow {
+            background-position: -114px -99px;
             width: 43px;
             height: 25px;
         }
         
         @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
-            .icon_dedupe,
-    .icon_collection,
-    .icon_auth,
-    .icon_lock,
-    .icon_arrow {
+            .icon-dedupe,
+    .icon-auth,
+    .icon-collection,
+    .icon-lock,
+    .icon-arrow {
                 background-image: url('sprite_assets.png');
-                -webkit-background-size: 192px 166px;
-                -moz-background-size: 192px 166px;
-                background-size: 192px 166px;
+                -webkit-background-size: 170px 160px;
+                -moz-background-size: 170px 160px;
+                background-size: 170px 160px;
             }
         }
         
         @media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
-            .icon_dedupe,
-    .icon_collection,
-    .icon_auth,
-    .icon_lock,
-    .icon_arrow {
+            .icon-dedupe,
+    .icon-auth,
+    .icon-collection,
+    .icon-lock,
+    .icon-arrow {
                 background-image: url('sprite_assets@2x.png');
-                -webkit-background-size: 192px 166px;
-                -moz-background-size: 192px 166px;
-                background-size: 192px 166px;
+                -webkit-background-size: 170px 160px;
+                -moz-background-size: 170px 160px;
+                background-size: 170px 160px;
             }
         }
         
