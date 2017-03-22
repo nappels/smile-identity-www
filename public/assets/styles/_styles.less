@@ -145,8 +145,16 @@ body.scrolled .navbar-inverse {
     color: #000;
   }
 
+  .form-wrapper {
+    position: relative;
+  }
+
   .contact-form {
-    margin-top: 30px;
+    top: 30px;
+    opacity: 1;
+    transition: opacity .3s ease;
+    position: absolute;
+    z-index: 999;
 
     .btn,
     input {
@@ -157,6 +165,24 @@ body.scrolled .navbar-inverse {
     input {
       width: auto;
       margin-right: 10px;
+    }
+  }
+
+  .form-wrapper .success-message {
+    opacity: 0;
+    transition: opacity .3s ease;
+    top: 30px;
+    position: absolute;
+  }
+
+  .form-wrapper.success {
+    .success-message {
+      opacity: 1;
+    }
+
+    .contact-form {
+      opacity: 0;
+      z-index: -1;
     }
   }
 

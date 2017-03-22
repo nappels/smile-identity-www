@@ -8,8 +8,11 @@ section#contact.row.section.light
       p 
         | Get in touch to learn more: 
       
-      form.contact-form
-        input.form-control(placeholder="Submit your email")
-        a.btn.btn-primary(role='button', href='#') Send
+      .form-wrapper
+        form.contact-form
+          input.form-control.email-input(type='email', name='email', placeholder="Submit your email")
+          input.btn.btn-primary(type='submit', value='Send')
+        .success-message
+          p Thanks! We will be in touch shortly.
     .col-md-6
       .trust
