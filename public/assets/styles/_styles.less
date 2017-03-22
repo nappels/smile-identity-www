@@ -150,11 +150,8 @@ body.scrolled .navbar-inverse {
   }
 
   .contact-form {
-    top: 30px;
     opacity: 1;
     transition: opacity .3s ease;
-    position: absolute;
-    z-index: 999;
 
     .btn,
     input {
@@ -171,17 +168,20 @@ body.scrolled .navbar-inverse {
   .form-wrapper .success-message {
     opacity: 0;
     transition: opacity .3s ease;
-    top: 30px;
+    top: 0px;
     position: absolute;
+    z-index: -1;
   }
 
   .form-wrapper.success {
     .success-message {
       opacity: 1;
+      position: static;
     }
 
     .contact-form {
       opacity: 0;
+      position: absolute;
       z-index: -1;
     }
   }
