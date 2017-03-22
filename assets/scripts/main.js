@@ -24,6 +24,8 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
   var email = document.querySelector('.email-input').value;
 
+  if (!email) return false;
+
   fetch('https://formspree.io/info@smileidentity.com', {
     method: 'POST',
     headers: {
