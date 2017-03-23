@@ -42,3 +42,33 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     console.log('error!', err)
   });
 });
+
+// Scrolling
+// -------------------------------------------
+
+
+function scrollTo(element, to, duration) {
+  if (duration <= 0) return;
+  var difference = to - element.scrollTop;
+  var perTick = difference / duration * 10;
+
+  setTimeout(function() {
+    element.scrollTop = element.scrollTop + perTick;
+    if (element.scrollTop === to) return;
+    scrollTo(element, to, duration - 10);
+  }, 10);
+}
+
+// Scroll main section down on arrow click
+document.querySelector('.main-section-arrow').addEventListener('click', function(e) {
+  e.preventDefault();
+  var missionSection = document.querySelector('#mission');
+  scrollTo(document.body, missionSection.offsetTop - 82, 400);
+});
+
+// Scroll to join section on join us nav click
+document.querySelector('.nav-join').addEventListener('click', function(e) {
+  e.preventDefault();
+  var joinSection = document.querySelector('#join');
+  scrollTo(document.body, joinSection.offsetTop - 82, 400);
+});
