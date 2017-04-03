@@ -5,7 +5,7 @@
 // Header Scroll
 // -------------------------------------------
 function setHeader() {
-  if (window.scrollY > 100) {
+  if (window.scrollY > window.innerHeight - 100) {
     document.body.classList.add('scrolled');
   } else {
     document.body.classList.remove('scrolled');
@@ -14,6 +14,23 @@ function setHeader() {
 
 window.addEventListener("scroll", function(evt) {
   setHeader();
+});
+
+// Gradient scroll effect
+// -------------------------------------------
+
+function gradientScroll() {
+  var deg = 225 + (window.scrollY / 4);
+  if (deg < 225) {
+    deg = 225;
+  } else if (deg > 325) {
+    deg = 325;
+  }
+  document.querySelector('.jumbotron').style['background-image'] = 'linear-gradient(' + deg + 'deg, #040717, rgb(150,150,150))';
+}
+
+window.addEventListener("scroll", function(evt) {
+  gradientScroll();
 });
 
 
