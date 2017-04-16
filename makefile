@@ -38,7 +38,7 @@ install:
 	bower install
 
 	@echo -e "${YELLOW}Creating vendor directory${NC}"
-	mkdir public/assets/scripts/vendor/
+	mkdir public/assets/scripts/vendor/ || echo vendor already exists
 
 	@echo -e "${YELLOW}Copy required assets from bower components${NC}"
 	cp $(BOWER)/bootstrap/dist/js/bootstrap.js      $(JS_VENDOR)
